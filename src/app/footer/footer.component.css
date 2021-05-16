@@ -1,6 +1,23 @@
 footer {
-  padding: 10px;
-  height: 40px;
+  margin-top: 10px;
+  height: 100px;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-bonus div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.footer-bonus p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.footer-bonus a {
+  color: #003883;
 }
