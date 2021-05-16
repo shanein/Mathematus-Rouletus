@@ -1,0 +1,19 @@
+<div class="game-container">
+  <button *ngIf="!gameStarted; else game" (click)="handleClick()" class="launch-game-btn">EN ROUTE VERS UN BON MOMENT</button>
+</div>
+<ng-template #game>
+  <p>{{ compt+zero }}</p>
+  <p>Un score de {{ score }}. Continue comme ça !</p>
+  <div [ngClass]="{'game--disabled': gameEnded}" class="button-reponse">
+    <button (click)="verif(true)">Oui</button>
+    <button (click)="verif(false)">Non</button>
+  </div>
+  <div [ngClass]="{'game--active': gameEnded}" class="none button-reponse">
+    <button>Oui</button>
+    <button>Non</button>
+  </div>
+  <div *ngIf="gameEnded" class="end-bloc">
+    <p>Vous avez fait {{ score }} point(s) ! <span *ngIf="score > 0">Bravo !</span></p>
+    <button (click)="handleClick()" class="launch-game-btn restart">Recommencer</button><br />
+  </div>
+</ng-template>

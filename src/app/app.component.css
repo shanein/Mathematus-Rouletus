@@ -5,10 +5,11 @@ app-header {
   z-index: 201;
   box-shadow: 1px 0 1px 1px rgb(0 0 0 / 10%);
   background-color: white;
+  height: 80px;
+  align-items: center;
 }
 
 app-footer {
   display: flex;
   justify-content: center;
-  padding: 10px;
 }
