@@ -1,6 +1,6 @@
 .game-container {
   width: 100%;
-  min-height: calc(100vh - 80px - 110px);
+  min-height: calc(100vh - 83px - 110px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,3 +78,6 @@ button.launch-game-btn:hover {
   margin-top: 20px;
 }
 
+p.result {
+  font-size: 40px;
+}

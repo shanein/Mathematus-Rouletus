@@ -3,6 +3,7 @@
 </div>
 <ng-template #game>
   <p>{{ compt+zero }}</p>
+  <p class="result">{{ resultaffiche }} = {{ resultrep }}</p>
   <p>Un score de {{ score }}. Continue comme ça !</p>
   <div [ngClass]="{'game--disabled': gameEnded}" class="button-reponse">
     <button (click)="verif(true)">Oui</button>
