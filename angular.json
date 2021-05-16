@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "mathematusrouletus"
+  "defaultProject": "mathematusrouletus",
+  "cli": {
+    "analytics": false
+  }
 }
